@@ -1,13 +1,14 @@
 import React from 'react'
+import { Layout } from './Layout'
 
 export const Contact = () => {
   return (
-    <>
+    <Layout>
     <section class="section6 flex" id="contact">
     <h2 class="title">Get In Touch</h2>
 
     <div class="socials flex">
-        <a href="https://www.linkedin.com/in/anita-kk/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/anita-kk/" target="blank" rel="noreferre noopener"><i class="fa-brands fa-linkedin"></i></a>
       
       {/* Put your own linked in account, open the achor tag and put the icon inside the anchor tag */}
       <i class="fa-brands fa-square-github"></i>
@@ -25,6 +26,6 @@ export const Contact = () => {
       </div>
     </div>
   </section>
-</>
+</Layout>
   )
 }

@@ -1,24 +1,25 @@
 import React from 'react'
 import user from "../assets/imgs/user.png"
+import { Layout } from './Layout'
 
 export const Hero = () => {
   return (
-    <> 
-    <section class="section1" id="header">
-    <div class="hero grid">
-      <div class="left flex">
+    <Layout> 
+    <section className="section1" id="header">
+    <div className="hero grid">
+      <div className="left flex">
         <img src={user} alt="profile pic" />
       </div>
 
-      <div class="right flex">
-        <div class="flex">
-          <div class="name">Prem</div>
-          <div class="tag">Soft. Engineer</div>
+      <div className="right flex">
+        <div className="flex">
+          <div className="name">Anita</div>
+          <div className="tag">Soft. Engineer</div>
         </div>
 
         <button>
           <a href={user} download>
-            Download CV <i class="fa-solid fa-download"></i
+            Download CV <i className="fa-solid fa-download"></i
           ></a>
         </button>
       </div>
@@ -26,13 +27,13 @@ export const Hero = () => {
   </section>
 
    {/* -- Banner --> */}
-  <section class="section2">
-    <div class="info-container flex">
-      <div class="info-lists flex">
+  <section className="section2">
+    <div className="info-container flex">
+      <div className="info-lists flex">
          {/* -- award  --> */}
-        <div class="info-content flex">
-          <div class="icon-container flex">
-            <i class="fa-solid fa-award"></i>
+        <div className="info-content flex">
+          <div className="icon-container flex">
+            <i className="fa-solid fa-award"></i>
           </div>
           <span>
             <h5>IT</h5>
@@ -40,12 +41,12 @@ export const Hero = () => {
           </span>
         </div>
 
-        <div class="info-divider"></div>
+        <div className="info-divider"></div>
 
          {/* -- project complete --> */}
-        <div class="info-content flex">
-          <div class="icon-container flex">
-            <i class="fa-solid fa-award"></i>
+        <div className="info-content flex">
+          <div className="icon-container flex">
+            <i className="fa-solid fa-award"></i>
           </div>
           <span>
             <h5>5 + Projects</h5>
@@ -53,12 +54,12 @@ export const Hero = () => {
           </span>
         </div>
 
-        <div class="info-divider"></div>
+        <div className="info-divider"></div>
 
          {/* -- year experiences --> */}
-        <div class="info-content flex">
-          <div class="icon-container flex">
-            <i class="fa-solid fa-award"></i>
+        <div className="info-content flex">
+          <div className="icon-container flex">
+            <i className="fa-solid fa-award"></i>
           </div>
           <span>
             <h5>1 + Year</h5>
@@ -67,7 +68,8 @@ export const Hero = () => {
         </div>
       </div>
     </div>
-  </section></>
+  </section>
+  </Layout>
     
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Layout } from './Layout'
 
 export const Footer = () => {
   return (
@@ -9,23 +10,23 @@ export const Footer = () => {
         <h3>Links</h3>
         <ul class="flex">
           <li>
-            <a href="#home">Home</a>
+          <Link to="/home">Home</Link>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+          <Link to="/skill">Skills</Link>
           </li>
           <li>
-            <a href="#projects">Projects</a>
+          <Link to="/project">project</Link>
           </li>
           <li>
-            <a href="#about">About Me</a>
+          <Link to="/about">About me</Link>
           </li>
         </ul>
       </div>
       <div class="flex socials">
         <h3>Socials</h3>
         <ul class="flex">
-          <li><a href="">LinkedIn</a></li>
+          <li><a href="" target='_blank'>LinkedIn</a></li>
           <li><a href="">Githhub</a></li>
           <li><a href="">Youtube</a></li>
         </ul>

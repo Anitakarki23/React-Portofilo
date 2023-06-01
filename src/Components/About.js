@@ -1,10 +1,11 @@
 import React from 'react'
 import user from "../assets/imgs/user.png"
+import { Layout } from './Layout'
  
 
 export const About = () => {
   return (
-    <> 
+    <Layout> 
     <section class="section5 flex" id="about">
     <h2 class="title">About Me</h2>
     <div class="about-container flex">
@@ -12,7 +13,7 @@ export const About = () => {
         <img src={user} alt="" />
       </div>
       <div class="right flex">
-        <h2>Prem Acharya</h2>
+        <h2>Anita karki</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
           expedita tenetur ipsa optio eveniet suscipit autem quia ratione,
@@ -32,7 +33,8 @@ export const About = () => {
         </div>
       </div>
     </div>
-  </section></>
+  </section>
+  </Layout>
     
   )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
   return (
@@ -11,7 +12,7 @@ export const Header = () => {
   <header class="flex primary-header">
     <div class="logo flex">
       <div>
-        <h1>Prem</h1>
+        <h1>Anita</h1>
       </div>
       <div>
         <h1 class="line">Web Developer</h1>
@@ -20,25 +21,28 @@ export const Header = () => {
 
     <div class="right">
       <input type="checkbox" id="check" />
-      <label for="check" class="menu-icon">
+      <label htmlFor="check" class="menu-icon">
         <i class="fa-solid fa-bars text-danger"></i>
       </label>
 
       <ul class="navigation flex">
         <li>
-          <a href="#header">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#skills">Skills</a>
+        <Link to="/skills">Skills</Link>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+        <Link to="/projects">Projects</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+        <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+        <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+        <Link to="/footer">Footer</Link>  
         </li>
       </ul>
     </div>

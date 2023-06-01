@@ -1,10 +1,11 @@
 import React from 'react'
 import ec from "../assets/imgs/ec.png"
+import { Layout } from './Layout'
 
 export const Project = () => {
   return (
 
-    <>
+    <Layout >
     <section class="section4 flex" id="projects">
     <h2 class="title">My Recent Work</h2>
     <div class="projects-container grid">
@@ -46,7 +47,7 @@ export const Project = () => {
       </div>
     </div>
   </section>
-</>
+</ Layout>
     
   )
 }

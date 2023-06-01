@@ -11,6 +11,7 @@ import { Project } from './Components/Project';
 import { About } from './Components/About';
 import { Contact } from './Components/Contact';
 import { Footer } from './Components/Footer';
+import {Routes, Route} from 'react-router-dom';
 
 
 
@@ -22,11 +23,14 @@ function App() {
 
 <div class="wrapper">
   <Header />
-  <Hero />
-  <Skill />
-  <Project /> 
-  <About />
-  <Contact />
+  <Routes>
+    <Route path="/" element={<Hero/>}/>
+    <Route path="skills" element={<Skill/>}/>
+    <Route path="projects" element={<Project/>}/>
+    <Route path="about" element={<About/>}/>
+    <Route path="contact" element={<Contact/>}/>
+    
+  </Routes>
   <Footer />
    {/* -- Hero --> */}
 
@@ -56,3 +60,7 @@ function App() {
 }
 
 export default App;
+
+// npm i react -router-DOM 
+// wrap entire components 
+// definr individaual page by using the routecomponment 
